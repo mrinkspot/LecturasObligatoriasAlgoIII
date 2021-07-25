@@ -53,7 +53,7 @@ describe otros objetos (estado interno, los mensajes que conocen y sus métodos 
 ### Factorización: cada componente independiente de un sistema aparecería en un solo lugar.
 Smalltalk fomenta los diseños factorizados a través de la herencia; cada clase hereda el comportamiento de su superclase.
 
-### Apalancamiento: cuando un sistema está bien factorizado, los usuaios y los implementadores disponen de un gran apalancamiento.
+### Aprovechamiento: cuando un sistema está bien factorizado, hay un mayor aprovechamiento para los usuarios y los implementadores
 
 ### Máquina virtual: una especificación de VM establece un marco para la aplicación de la tecnología. 
 
