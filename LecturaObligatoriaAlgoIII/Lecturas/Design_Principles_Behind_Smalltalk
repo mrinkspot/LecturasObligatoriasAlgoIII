@@ -1,0 +1,65 @@
+# Design Principles Behind Smalltalk
+
+## Intro
+Smalltalk está enfocado en dos áreas principales de investigación: 
+
+· un lenguaje de programación
+de descripción que provee una interfaz entre los modelos en la mente humana y aquellos del hardware
+
+· un lenguaje de interacción (interfaz de usuario) que ayuda a que coincida la comunicación humana con el
+sistema del computador.
+
+## Principios de Smalltalk
+
+### Personal Mastery: If a system is to serve the creative spirit, it must be entirely comprehensible to a single individual.
+Cualquier parte del sistema que no pueda ser cambiada o que no sea general es una TRABAAAA
+
+### Buen diseño.
+Un sistema debe construirse con un conjunto mínimo de partes inalterables, y esas partes deben ser lo más
+generales posibles. Todas las partes deben mantenerse en un marco uniforme.
+
+### Propósito del lenguaje: proporcionar un marco (framework) para la comunicación.
+Se deben respetar los mecanismos del pensamiento y la comunicación de los humanos, por
+lo cual nuestros modelos informáticos deben ser compatibles con la mente, y no al revés.
+
+
+### Scope: El diseño de un lenguaje para el uso de los ordenadores debe ocuparse de los modelos internos, los medios externos y la interacción entre éstos tanto en el humano como en la computadora.
+
+### Objetos: Un lenguaje informático debe soportar el concepto de "objeto" y proporcionar un medio uniforme para referirse a los objetos de su universo.
+Los objetos se crean cuando se evalúan las expresiones y se pueden pasar por referencia, por lo que no es necesario proveer
+cosas locas para su almacenamiento para poder manipularlos.
+
+### Gestión de almacenamiento: para ser verdaderamente "POO" un sistema informático debe proporcionar una gestión automática del almacenamiento.
+
+### Mensajes: la computación debe ser vista como una capacidad intrínseca de los objetos que puede ser invocada uniformemente mediante el envío de mensajes.
+Smalltalk tiene objetos que son re buena onda y se mandan mensajes entre ellos. La transmisión de mensajes es el único
+proceso que se realiza fuera de los objetos, por lo tanto los mensajes viajan entre objetos.
+
+### Metáfora uniforme: un lenguaje debe diseñarse en torno a una metáfora potente que pueda aplicarse uniformemente en todos los ámbitos.
+Todo objeto en Smalltalk tiene un conjunto de mensajes, un protocolo, que define la comunicación explícita a la cual los
+objetos pueden responder.
+
+### Modularidad: ningún componente de un sistema complejo debe depender de los detalles internos de ningún otro componente.
+Los sistemas informáticos deben ser diseñados para minimizar esta interdependencia. La metáfora de envío de mensajes
+modulariza al desacoplar la intención de un mensaje del método usado por el destinatario para llevarla a cabo.
+
+La complejidad de un sistema puede ser reducida agrupando componentes similares, esto se hace a través de clases. Una clase
+describe otros objetos (estado interno, los mensajes que conocen y sus métodos internos para responder esos mensajes).
+
+### Clasificación: un lenguaje debe proporcionar un medio para clasificar objetos similares, y para añadir nuevas clases de objetos en igualdad de condiciones con las clases del núcleo del sistema.
+
+### Polimorfismo: un programa debe especificar sólo el comportamiento de sus objetos, no su representación.
+
+### Factorización: cada componente independiente de un sistema aparecería en un solo lugar.
+Smalltalk fomenta los diseños factorizados a través de la herencia; cada clase hereda el comportamiento de su superclase.
+
+### Apalancamiento: cuando un sistema está bien factorizado, los usuaios y los implementadores disponen de un gran apalancamiento.
+
+### Máquina virtual: una especificación de VM establece un marco para la aplicación de la tecnología. 
+
+### Principio de Reactividad: todo componente accesible al usuario debe ser capaz de presentarse d eforma significativa para su observación y manipulación.
+
+### Sistema operativo: un OS es una colección de cosas que no entran en un lenguaje. No debería haber uno.
+Algunos componentes de sistema operativo incorporados a Smalltalk son administración de almacenamiento, file system, debugger.
+
+### Selección natural: los lenguajes y sistemas de buen diseño persistirán, para ser suplantados por otros mejores.
